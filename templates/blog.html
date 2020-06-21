@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My first Flask app</title>
+  </head>
+  <body>
+    <h1>This is a blog for JB!</h1>
+    {%if sunny%}
+    <p>It's sunny</p>
+    {%else%}
+    <p>It's rainy</p>
+    {%endif%} {%for post in posts%}
+    <h2>{{post.title}}</h2>
+    <h3>{{post.author}}</h3>
+    {%endfor%}
+  </body>
+</html>
